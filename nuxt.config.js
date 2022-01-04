@@ -1,4 +1,5 @@
 export default {
+  ssr: false,
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
@@ -14,7 +15,10 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+    {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Roboto+Slab:wght@400;600&family=Roboto:wght@400;500;700&display=swap'},
+    {rel: 'preconnect', href: 'https://fonts.gstatic.com'},
+  ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
